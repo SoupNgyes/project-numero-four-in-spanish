@@ -1,12 +1,8 @@
-
-def add(num1, num2):
-  print(f"The sum is: {num1 + num2}")
-  print(f"The difference between the numbers is: {num1-num2}")
+name = input("Please state your name: ")
 
 
 
-num1 = int(input("Give me a number: "))
-num2 = int(input("Give me another number: "))
-add(num1, num2)
-
-#comment
+if (name == "Freddy Fazbear"):
+  print("HELLO FREDDY FAZBEAR FROM THE HIT GAME FIVE NIGHTS AT FREDDIES")
+else:
+  print(f"Hello, {name}")
