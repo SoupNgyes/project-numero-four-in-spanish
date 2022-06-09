@@ -1,8 +1,24 @@
-name = input("Please state your name: ")
+import turtle
+
+x = 0
+
+
+turtle.setup (500,500)
+kaia = turtle.Turtle()
+screen = turtle.Screen()
 
 
 
-if (name == "Freddy Fazbear"):
-  print("HELLO FREDDY FAZBEAR FROM THE HIT GAME FIVE NIGHTS AT FREDDIES")
-else:
-  print(f"Hello, {name}")
+def drawCircle():
+  kaia.circle(50)
+  
+def drawPattern():
+  x = 0
+  while x < 36:
+    drawCircle()
+    kaia.right(10)
+    x +=1
+
+  
+screen.onkey(drawPattern, "o")
+screen.listen()
